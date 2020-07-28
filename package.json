@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Backend for budget tracker",
   "main": "server.js",
-  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
