@@ -23,7 +23,7 @@ exports.getTransactions = async (req, res, next) => {
 // POST transaction
 // Route: /api/v1/transactions
 // Access: public
-exports.postTransaction = async (req, res, next) => {
+exports.addTransaction = async (req, res, next) => {
   try {
     const { text, amount } = req.body;
 
